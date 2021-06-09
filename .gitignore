@@ -13,7 +13,7 @@ app/
 test_app/
 build/
 develop-eggs/
-dist/
+# dist/
 downloads/
 eggs/
 .eggs/
