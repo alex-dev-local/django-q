@@ -586,7 +586,7 @@ def scheduler(broker: Broker = None):
             for s in (
                 Schedule.objects.select_for_update()
                 .exclude(repeats=0)
-                .filter(next_run__lt=timezone.now())
+                .filter(next_run__lt=timezone.now(), disabled=False)
                 .filter(
                     db.models.Q(cluster__isnull=True) | db.models.Q(cluster=Conf.PREFIX)
                 )

@@ -201,6 +201,7 @@ class Schedule(models.Model):
     )
     task = models.CharField(max_length=100, null=True, editable=False)
     cluster = models.CharField(max_length=100, default=None, null=True, blank=True)
+    disabled = models.BooleanField(default=False)
 
     def success(self):
         if self.task and Task.objects.filter(id=self.task):

@@ -123,7 +123,7 @@ class Conf:
     MAX_RSS = conf.get("max_rss", None)
 
     # Number of seconds to wait for a worker to finish.
-    TIMEOUT = conf.get("timeout", None)
+    TIMEOUT = conf.get("timeout", 50)
 
     # Whether to acknowledge unsuccessful tasks.
     # This causes failed tasks to be considered delivered, thereby removing them from
