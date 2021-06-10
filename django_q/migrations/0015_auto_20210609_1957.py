@@ -15,14 +15,4 @@ class Migration(migrations.Migration):
             name='disabled',
             field=models.BooleanField(default=False),
         ),
-        migrations.AlterField(
-            model_name='ormq',
-            name='id',
-            field=models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID'),
-        ),
-        migrations.AlterField(
-            model_name='schedule',
-            name='id',
-            field=models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID'),
-        ),
     ]
