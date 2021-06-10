@@ -72,6 +72,7 @@ class ScheduleAdmin(admin.ModelAdmin):
         "next_run",
         "last_run",
         "success",
+        "disabled",
     )
 
     # optional cron strings
